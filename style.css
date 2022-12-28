@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body{
+    background-color: #f0f0f0;
+}
+
+/* ヘッダー css */
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 25px;
+    width: auto;
+}
+
+/* ヘッダーnav css */
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.header-items{
+    display: flex;
+    margin-left: 120px;
+}
+
+.header-list{
+    margin-left: 65px;
+}
+
+.header-list a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ヘッダーお問い合わせ css */
+
+.header-contact{
+    background-color: black;
+    float: right;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contact:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header-contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* メインビジュアル css */
+
+#main-visual{
+    width: 100%;
+    height: 650px;
+}
+
+#main-visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ニュース css */
+
+#news{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ニュースタイトル css */
+
+.news-title h1{
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.news-title p{
+    padding-bottom: 30px;
+}
+
+.news-line{
+    border-bottom: 1px black solid;
+    height: 1px;
+    width: 40px;
+}
+
+/* ニュースコンテンツ css */
+
+.news-contents{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.n-c-wrapper{
+    width: calc(100%/3);
+    border-left: 1px black solid;
+    padding: 8px 0px 8px 20px;
+}
+
+.n-c-wrapper-1{
+    border-left: none;
+    padding-left: 0px;
+}
+
+.news-time{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.n-c-wrapper span{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: auto;
+    padding: 0px 5px;
+    margin-left: 15px;
+}
+
+.n-c-wrapper p{
+    margin-top: 10px;
+}
+
+/* アバウト css */
+
+#about{
+    display: flex;
+}
+
+.about-img{
+    height: 400px;
+    width: 55%;
+}
+
+.about-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* アバウトタイトル css */
+
+.about-title h1{
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-title p{
+    padding-bottom: 30px;
+}
+
+.about-line{
+    border-bottom: 1px black solid;
+    height: 1px;
+    width: 40px;
+}
+
+/* アバウトテキスト css */
+
+.about-wrapper{
+    width: 45%;
+    padding: 175px 5% 0px 5%;
+}
+
+.about-texts{
+    margin-top: 40px;
+}
+
+.about-texts p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* ビジネス css */
+
+#business{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* ビジネスタイトル css */
+
+.business-title h1{
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.business-title p{
+    padding-bottom: 30px;
+}
+
+.business-line{
+    border-bottom: 1px black solid;
+    height: 1px;
+    width: 40px;
+}
+
+/* ビジネスアイテム css */
+
+.b-item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+
+.left,.right{
+    width: 47%;
+}
+
+.b-item img{
+    width: 100%;
+    height: auto;
+}
+
+.b-item p{
+    font-weight: bold;
+    position: relative;
+    margin-left: 18px;
+    margin-bottom: 8px;
+}
+
+.b-item p::before{
+    content: "-";
+    position: absolute;
+    left: -18px;  
+}
+
+.left-1{
+    margin-top: 125px;
+    margin-bottom: 30px;
+}
+
+.right-1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* カンパニー css */
+
+#company{
+    max-width: 1000px;
+    height: 550px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* カンパニーテキスト css */
+
+.company-texts{
+    background-color: white;
+    width: 55%;
+    padding: 100px 8% 100px 6%;
+    position: absolute;
+    right: 45%;
+}
+
+.company-title h1{
+    font-size: 42px;
+    letter-spacing: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.company-title p{
+    padding-bottom: 30px;
+}
+
+.company-line{
+    border-bottom: 1px black solid;
+    height: 1px;
+    width: 40px;
+}
+
+/* カンパニーセンテンス css */
+
+.company-sentence{
+    margin-top: 45px;
+}
+
+.company-sentence dl{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.company-sentence dt{
+    width: 20%;
+}
+
+.company-sentence dd{
+    width: 80%;
+    line-height: 30px;
+}
+
+/* カンパニーイメージ css */
+
+.company-img{
+    width: 53%;
+    height: 400px;
+    position: absolute;
+    left: 47%;
+    top: 125px;
+}
+
+.company-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* フッター css */
+
+footer{
+    background-color: white;
+    padding: 40px 0px 20px 0px;
+}
+
+.footer-wrapper{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-img{
+    height: 25px;
+    width: auto;
+}
+
+.footer-img img{
+    height: 100%;
+}
+
+.footer-texts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li{
+    list-style: none;
+    font-size: 14px;
+}
+
+footer p{
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:900px) {
+
+    /* ヘッダー css */
+
+    .header-items{
+        display: block;
+        margin-left: 0px;
+        padding: 0px 15px;
+    }
+
+    .header-items img{
+        height: 22px;
+        width: auto;
+    }
+
+    .header-list{
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    .header-contact{
+        display: none;
+    }
+
+    /* ニュース css */
+
+    #news{
+        padding: 80px 15px;
+    }
+
+    .news-contents{
+        display: block;
+    }
+
+    .n-c-wrapper{
+        width: 100%;
+        border-left: none;
+        padding-left: 0px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .n-c-wrapper p{
+        padding-top: 15px;
+    }
+
+    .news-title h1{
+        font-size: 40px;
+    }
+
+    .news-title p{
+        padding-bottom: 20px;
+    }
+
+    /* アバウト css */
+
+    #about{
+        display: block;
+    }
+
+    .about-img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-title h1{
+        font-size: 40px;
+    }
+
+    .about-title p{
+        padding-bottom: 20px;
+    }
+
+    .about-wrapper{
+        width: 100%;
+        padding: 30px 15px 0px 15px;
+    }
+
+    /* ビジネス css */
+
+    #business{
+        margin-top: 80px;
+        padding: 0px 15px;
+    }
+
+    .business-title h1{
+        font-size: 40px;
+    }
+
+    .business-title p{
+        padding-bottom: 20px;
+    }
+
+    .b-item{
+        display: block;
+    }
+
+    .left,.right{
+        width: 100%;
+    }
+
+    .left-1{
+        margin-top: 40px;
+    }
+
+    .b-item p{
+        text-align: left;
+    }
+
+    /* カンパニー css */
+
+    #company{
+        display: block;
+        height: auto;
+        padding: 0px 15px;
+        margin: 80px 0px 40px 0px;
+    }
+
+    .company-texts{
+        position: static;
+    }
+
+    .company-img{
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .company-texts{
+        width: 100%;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .company-sentence dl{
+        display: block;
+    }
+
+    .company-sentence dt{
+        margin-top: 15px;
+        line-height: 27px;
+    }
+
+    .company-sentence dd{
+        margin-left: 15px;
+        line-height: 27px;
+    }
+
+    /* フッター css */
+
+    footer{
+        padding: 30px 15px 20px 15px;
+    }
+
+    .footer-texts{
+        display: block;
+    }
+
+    .footer-img{
+        height: 22px;
+        width: auto;
+    }
+
+    .footer-texts ul{
+        margin-top: 15px;
+    }
+
+}
